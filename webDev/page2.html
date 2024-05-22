@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+</head>
+<body>
+    <div>
+        <ul class="nav-h">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="#" class="active">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+        </ul>
+    </div>
+
+    <!-- The below elements will have attributes addes -->
+<div class="section_c">
+    <p style="color:purple;font-size: x-large">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Consequuntur eos quibusdam illo consectetur, sapiente cumque
+        laudantium possimus eum pariatur impedit modi corporis quis
+        architecto optio corrupti vitae asperiores nulla debitis 
+        molestias temporibus nemo porro, iusto nihil! Illum facere
+        provident reprehenderit? Deleniti itaque dolorum facere et.
+    </p>
+<h3>My grocery list</h3>
+<ul class="grocer_list" id="grocery">
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Bread</li>
+    <li>Lunch meat</li>
+    <li>Cheese</li>
+    <li>Cereal</li>
+</ul>
+
+<img src="https://i.ibb.co/GckCvqJ/dog-image7.jpg" alt="dog-image7"/>
+
+<button id="btn-change"onclick="changeList()">Change List</button>
+
+<h2>Link to Sports</h2>
+<a href="http://www.espn.com" target="_blank">ESPN</a>
+
+</div>
+
+
+<div id="box"></div>
+
+<script>
+    function changeList (){
+        document
+        .getElementById('grocery')
+        .classList.toggle('grocery_square');
+   }
+
+   let boxInfo=document.getElementById("box");
+
+   console.log(boxInfo.offsetWidth);
+   console.log(boxInfo.offsetHeight);
+
+
+</script>
+
+</body>
+</html>

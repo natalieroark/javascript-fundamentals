@@ -1,0 +1,111 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Divs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        h2 {
+            color:white;
+        }
+        .outside {
+            padding: 16px;
+            background-color: green;
+            width: 884px;
+            position: relative;
+        }
+
+        .top {
+            width: 868px;
+            background-color: white;
+        }
+
+        .sides {
+            width: 150px;
+            height: 400px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .center {
+           width: 568px;
+           height: 400px;
+           background-color: lightblue;
+           display: inline-block;
+        }
+        .sides,
+        .center {
+            height: 400px;
+            display: inline-block;
+        }
+        .bottom {
+            width: 868px;
+            height: 30px;
+            margin-top: 16px;
+            background-color: blue;    
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Horizontal Navigation -->
+<div>
+    <ul class="nav-h">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+    </ul>
+</div>
+
+    <!-- This will surround all of the div tags and content-->
+<div class="outside">
+    <!-- Top div can have navigation or maybe a benner-->
+    <div class="top"><h1>Header Section</h1></div>
+
+    <!-- Left div can have navigation or other information-->
+    <div class="sides"></div>
+
+    <!-- Center div where most of the content will be-->
+    <div class="center"><p>Most Information Goes Here</p></div>
+
+    <!-- Right div can have navigation or other information-->
+    <div class="sides"></div>
+
+    <!-- Bottom div can have navigation and maybe a footer-->
+    <div class="bottom"><h6>Footer Section</h6></div>
+</div>
+
+    <button id="sample">Something</button>
+
+    <script>
+        document
+        .getElementById("sample")
+        .addEventListener("click", something);
+
+        function something() {
+            console.log('Trying an event listener.');
+        }
+
+        window
+        .onload = function () {
+            console.log('The page has loaded.');
+        }
+
+        document
+        .getElementById('center')
+        .addEventListener('dblclick', function () {
+            console.log('Element double-clicked!');
+        });
+
+    </script>
+</body>
+</html>

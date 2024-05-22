@@ -1,0 +1,4 @@
+Chicken 3.49
+Beef 2.99
+Turkey 3.99
+Lamb 4.99
